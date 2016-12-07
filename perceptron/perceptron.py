@@ -91,8 +91,8 @@ def test2():
     p = Perceptron()
     p.train(X_train, y_train)
     y_predict = p.predict(X_test)
-    a = accuracy_score(y_test, y_predict)
-    print a
+    score = accuracy_score(y_test, y_predict)
+    print score
 
 
 if __name__ == '__main__':
